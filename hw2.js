@@ -47,6 +47,16 @@ export function filterAndExtendArrayItems(array) {
   }
   return newArray;
 }
+
+export function filterAndExtendArrayItems(array) {
+  return array.reduce(function (total, current) { 
+    if(current.a>=5){ 
+    current["sum"] = current.a + current.b;
+    total.push(current);
+    }
+    return total;
+     }, [] );
+}
 // Task 5 - merge arrays and remove duplicates
 // const arNum = [1, 2, 3, 4, 5, 6];
 // const arNum2 = [15, 6, 3, 20, 11];
