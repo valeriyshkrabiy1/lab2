@@ -63,3 +63,12 @@ export function filterAndExtendArrayItems(array) {
 export function mergeArraysWithoutDuplicates(array1, array2) {
   return Array.from(new Set(array1.concat(array2)));
 }
+
+export function mergeArraysWithoutDuplicates(array1, array2) {
+  array1 = array1.concat(array2) // merge two arrays
+  for (let i = 0; i <= array1.length; i++) {
+    let newArr = array1[i][id];
+    myHash[newArr] = array1[i];
+}
+return newArr
+}
