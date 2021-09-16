@@ -72,3 +72,14 @@ export function mergeArraysWithoutDuplicates(array1, array2) {
 }
 return newArr
 }
+
+export function mergeArraysWithoutDuplicates(array1, array2) {
+  let newArray = [];
+  newArray.concat(array1); // merge two arrays
+  for (let i = 0; i <= array2.length; i++) {
+    if (newArray.find(array2[i]) === undefined) {
+      newArray.push(array2[i]);
+    }
+  }
+  return newArray;
+}
